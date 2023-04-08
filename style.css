@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Stardew Valley';
+  src: url(Stardew_Valley.otf) format(otf);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Stardew Valley";
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    color: #f0f8ff;
+    background-image: url(Imagens/night.jpg);
+    background-size: cover;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 600px;
+    margin: 10px auto;
+    border: 5px solid #3e8bb8;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 70px;
+    text-align: center;
+    color: #ffffff;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 1px;
+    font-size: 30px;
+  }
+  
+  input[type="number"] {
+    color: #3d4097;
+    font-size: 30px;
+    font-family: "Stardew Valley";
+    width: 100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: #f0f8ff;
+  }
+  
+  select {
+    color: #3d4097;
+    font-family: "Stardew Valley";
+    width: 100%;
+    height: 35px;
+    border: none;
+    font-size: 33px;
+    outline: none;
+    background-color: #f0f8ff;
+  }
+  
+  button {
+  font-family: "Stardew Valley";
+	width: 200px;
+	height: 43px;
+	font-size: 40px;
+	color: #2d49b9;
+	background-color: #ffffff !important;
+	border: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: none;
+	margin-top: 8px;
+  }
+  
+  div.answer {
+      width: calc(50% - 10px);
+      height: calc(50% - 10px);
+      border: none;
+      outline: none; 
+  }
+  
+  div.answer:nth-child(odd) {
+      float:left; 
+      margin-right:10px; 
+      background-color:#f0f8ff; 
+  }
+  div.answer:nth-child(even) { 
+      float:right; 
+      margin-left:10px; 
+      background-color:#f0f8ff; 
+  }
+  
+  /* Adicionando a regra para centralizar tudo */
+  .container, div.answer {
+      display:flex; 
+      align-items:center; 
+      justify-content:center; 
+  }
+
+  section {
+    height: 100%;
+    margin: 0 auto 0px;
+    text-align: center;
+    padding: 5px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    }
+  #box{
+    background-color: #3d4097;
+    box-shadow: none;
+    height: 40%;
+  }
+  h3{
+    font-size: 20px;
+  }
+
+  option {
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 35px;
+  }
+  .resultado{
+    font-size: 30px;
+    height: 500x;
+    width: 75%;
+    margin: 0 auto 8px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    @media only screen and (min-width: 768px) {
+      /* define a largura como 40% para telas com largura de 768px ou superior (PC) */
+      h1{
+        font-size: 80px;
+      }
+      section {
+        width: 60%;
+      }
+      label {
+        display: block;
+        margin-bottom: 1px;
+        font-size: 40px;
+      }
+      #box{
+        background-color: #3d4097;
+        box-shadow: none;
+        height: 40%;
+        width: 58%;
+    }
+  }
