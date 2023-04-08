@@ -1,10 +1,11 @@
 @font-face {
   font-family: 'Stardew Valley';
-  src: url(Stardew_Valley.otf) format(otf);
+  src: url(Stardew_Valley.otf) format(opentype);
 }
 
 
 * {
+    
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -17,6 +18,7 @@
     color: #f0f8ff;
     background-image: url(Imagens/night.jpg);
     background-size: cover;
+
   }
   
   .container {
@@ -111,12 +113,13 @@
     padding: 5px 40px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    width: 80%;
+    width: 90%;
     }
   #box{
     background-color: #3d4097;
     box-shadow: none;
-    height: 40%;
+    height: 100%;
+    
   }
   h3{
     font-size: 20px;
@@ -140,11 +143,23 @@
     }
     @media only screen and (min-width: 768px) {
       /* define a largura como 40% para telas com largura de 768px ou superior (PC) */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
       h1{
         font-size: 80px;
       }
       section {
         width: 60%;
+        height: 100%;
+        margin: 0 auto 0px;
+        text-align: center;
+        padding: 5px 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    
       }
       label {
         display: block;
@@ -154,7 +169,22 @@
       #box{
         background-color: #3d4097;
         box-shadow: none;
-        height: 40%;
+        height: 100%;
         width: 58%;
+      }
+      body {
+          font-family: "Stardew Valley";
+          background-color: hsl(0, 0%, 100%);
+          text-align: center;
+          color: #f0f8ff;
+          background-image: url(Imagens/night.jpg);
+          background-size: cover;
+        }
+        
+        #box{
+          background-color: #3d4097;
+          box-shadow: none;
+          height: 40%;
+        }
     }
-  }
+    
